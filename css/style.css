@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+ul a  {
+    list-style-type: none;
+    text-decoration: none;
+    
+}
+
+body nav ul li a {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(114, 76,209);
+    font-style: bold;
+    font-weight: 700;
+    letter-spacing: normal;
+    font-size: 16px;
+    padding-right: 20px;
+
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 14px 10px 10px ;
+    background-color: rgb(199, 199, 199);
+    position:fixed;
+    top:0;
+    width:100%;
+
+
+}
+
+main div img {
+    margin-top: 300px;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(86,193,190);
+    font-style: bold;
+    font-weight: 800;
+    font-size: 50px;
+    padding: 160px 14px 10px 10px ;
+
+
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items:center;
+    
+
+}
+
+.productos{
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(66, 66, 66);
+    font-style: medium;
+    font-weight: 800;
+    font-size: 20px;
+    padding: 160px 14px 10px 130px ;
+
+
+}
+
+.grid { 
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-template-rows: 200px 200px ;
+    column-gap: 10px;
+    row-gap: 15px;
+    width: 100%; 
+    padding: 20px 14px 30px 20px;
+    justify-items: center;
+    align-items: center;
+    justify-items: stretch;
+    align-items: stretch;
+    
+    grid-template-areas: 
+    "rascador rascador kong caja" 
+    "pretal correas comedero soga"
+
+     ;
+}
+
+
+.img1 {
+    background-color: brown;
+    grid-area: rascador;
+    
+    
+    
+}
+.img2 {
+
+    background-color: burlywood;
+    grid-area: kong; 
+}
+
+.img3 {
+    background-color: bisque;
+    grid-area: caja; 
+} 
+
+.img4 {
+    background-color: cadetblue;
+    grid-area: pretal; 
+}
+.img5 {
+   
+    grid-area: correas; 
+}
+.img6 {
+    
+    grid-area: comedero; 
+}
+.img7 {
+    
+    grid-area: soga; 
+}
+
+section h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    font-style: bold;
+    font-weight: 800;
+    font-size:30px;
+    padding: 20px 14px 30px 20px ;
+    border: 20px 14px 30px 20px;
+
+
+    background-image:url(../img/pattern.png);
+}
+
+aside span {
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(114, 76,209);
+    font-style: italic;
+    font-weight: 700;
+    font-size: 40px;
+    padding: 20px 14px 30px 20px ;
+    
+
+}
+aside div img {
+    width: 50%;
+}
+
+.flexx{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+    align-items:center;
+    padding: 75px 14px 0px 20px ;
+    
+    
+
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items:center;
+    
+}
+footer {
+    
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header {
+    grid-area: der;
+}
+
+main {
+    grid-area: main;
+}
+div{
+    grid-area: div;
+}
+section {
+    grid-area: sec;
+
+}
+
+aside {
+    grid-area: aside;
+
+}
+
+footer{
+    grid-area: pie;
+}
+
+@media (max-width: 600px) {
+    
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-items: center;
+        align-items: stretch;
+        
+        
+        grid-template-areas:
+        
+        "kong"
+        "caja"
+        "pretal"
+        "correas"
+        "comedero"
+        "soga";
+
+
+    
+        
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position:fixed ;
+
+    }
+    .img1 {
+        display: none;
+    }
+
+}
+
+
